@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <title>Flight Details</title>
+</head>
+
+<body>
+    <table class="display_box">
+        <tr>
+            <th>Flight Id</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td id="f_details">1</td>
+            <td id="f_details">3:00</td>
+            <td id="f_details">6</td>
+            <td id="f_details">5</td>
+        </tr>
+
+    </table>
+    <div class="form-container">
+        <form method="post" action="" onsubmit="return validate()">
+
+            <label class="flight_id">Flight ID *</label>
+            <br>
+            <div class="your-class">
+                <input name="flight_id" id="flight_id" type="text" placeholder="Enter flight ID " />
+            </div>
+            <br><br>
+
+            <label class="date">Travelling Date*</label>
+            <br>
+            <div class="your-class">
+                <input name="date" id="date" type="date"  />
+            </div>
+            <br><br>
+            
+            <label class="seats">No of Seats</label>
+            <br>
+            <div class="your-class">
+                <input name="seats" id="seats" type="text"  />
+                <input type="button" value="Submit" onclick = "feesgenerate()">
+            </div>
+            <br><br>
+
+            <label for="total">Total</label>
+            <span id = "total" name = "total"></span>
+
+    </div>
+</body>
+    <script>
+        window.addEventListener('load', () => {
+        const name = sessionStorage.getItem('NAME');
+        document.getElementById("date").value = name;        
+})
+</script>
+
+</script>
+
+
+</html>

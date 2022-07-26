@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <h2>Regiatraiton form</h2>
+    <div class="form-container">
+        <form method="post" action="" onsubmit="return validate()">
+        
+            <label class="custname">Customer Name</label>
+            <br>
+            <div class="your-class">
+              <input name="first_name" id="first_name" type="text" placeholder="First Name " />
+              <input name="last_name" id="last_name" type="text" placeholder="Last Name" /> 
+            </div>
+            <br><br>
+            <div class="your-class">
+                <label for="email">Email-Id *</label>
+              <input name="email" id="email" type="email" placeholder="Enter your email id" />
+            </div>
+            <br><br>
+            <label class="custname">Password *</label>
+            <br>
+            <input type="Password" id="password" name="password" placeholder="Enter your password">
+            <br><hr><br>
+            <label class="custname">Confirm Password *</label>
+            <br>
+            <input type="Password" id="confirm_password" name="confirm_password" placeholder="Enter your password">
+            <br><hr><br>
+            <label for="age">Age *</label><br>
+            <input type="text" placeholder="Enter your age"><br><hr>
+            <label class="custname">Gender *</label>
+            <br>
+            <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">Others</option>
+            </select>
+            <br><br><hr><br>
+            <label class="custname">Address *</label>
+            <br>
+            <textarea rows="5" name="address" id="address" placeholder="Enter The address here" cols="50"></textarea>
+            <br><br><hr><br>
+            
+            <label class="custname">Contact numbers </label>
+            <br>
+            <div>
+              <label>Mobile Number *</label>
+              <input type="Number" name="mobno1" id="phnum1">
+            
+            <input type="button" id="register" name="submit2" value="Submit Form" onclick="validate()">
+          </form>
+    </div>
+</body>
+</html>

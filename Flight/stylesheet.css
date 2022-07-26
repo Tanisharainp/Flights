@@ -1,0 +1,18 @@
+.form-container{
+    background-color: rgb(170, 157, 157);
+    padding: 15px;
+    width: 500px;
+    margin:auto;
+    
+}
+.form-container input[type=text], .form-container input[type=password], .form-container input[type = "email"]{
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.display_box{
+    align-items: left;
+}
